@@ -46,13 +46,26 @@ comments:
     of the brushed metal. I'm not sure if this will hinder my installation of Leopard
     or not... But I do like the unified look.
 ---
-<p>The book Eelco and I are writing, <a href="http://manning.com/dashorst/" title="Manning: Wicket in Action">Wicket in Action</a>, is getting together quickly. As of today the MEAP edition consists of 228 pages worth of Wicket gold.</p>
-<p style="text-align:center"><img src="http://martijndashorst.com/blog/wp-content/uploads/2007/12/wicket_in_action.jpg" alt="Wicket in Action" height="188" width="150" /></p>
-<p>We have added chapters 7 and 8, concluding the second part of our book:</p>
-<ul>
-<li>Chapter 7: Using forms for data entry</li>
-<li>Chapter 8: Composing your pages </li>
-</ul>
-<p>Chapter 7 describes everything you wanted to know about form processing and validation. Chapter 8 describes how you can group components using <tt>WebMarkupContainer</tt>s, fragments and panels, and describes the various ways of composing your pages to get a consistent layout across your whole application.</p>
-<p>
-<a href="http://manning.com/dashorst/" title="Manning: Wicket in Action">Get it</a> while it is fresh! And as always: comments are welcome on the <a href="http://www.manning-sandbox.com/forum.jspa?forumID=328" title="Sandbox: Wicket in Action">Author Online forum</a>.</p>
+
+The book Eelco and I are writing, [Wicket in Action][1], is getting
+together quickly. As of today the MEAP edition consists of 228 pages
+worth of Wicket gold.
+
+<p style="text-align:center"><img src="/uploads/wicket_in_action.jpg" alt="Wicket in Action" height="480" /></p>
+
+We have added chapters 7 and 8, concluding the second part of our book:
+
+- Chapter 7: Using forms for data entry
+- Chapter 8: Composing your pages
+
+Chapter 7 describes everything you wanted to know about form processing
+and validation. Chapter 8 describes how you can group components using
+`WebMarkupContainer`s, fragments and panels, and describes the various
+ways of composing your pages to get a consistent layout across your
+whole application.
+
+[Get it][1] while it is fresh! And as always: comments are welcome on
+the [Author Online forum][2].
+
+[1]: http://manning.com/dashorst/
+[2]: http://www.manning-sandbox.com/forum.jspa?forumID=328
