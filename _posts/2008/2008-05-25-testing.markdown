@@ -1,0 +1,26 @@
+---
+layout: page
+status: publish
+published: true
+title: Testing
+author: Martijn Dashorst
+author_login: admin
+author_email: martijn.dashorst@gmail.com
+author_url: http://martijndashorst.com
+wordpress_id: 367
+wordpress_url: http://martijndashorst.com/blog/?page_id=367
+date: '2008-05-25 16:58:54 +0200'
+date_gmt: '2008-05-25 15:58:54 +0200'
+categories:
+- wicket
+tags: []
+comments:
+- id: 56906
+  author: Wicket starter kit | A Wicket Diary
+  author_email: ''
+  author_url: http://martijndashorst.com/blog/2008/05/25/wicket-starter-kit/
+  date: '2008-05-25 22:47:15 +0200'
+  date_gmt: '2008-05-25 21:47:15 +0200'
+  content: "[...] Testing [...]"
+---
+<p><iframe src="http://astore.amazon.com/awidi-20?&node=6" width="100%" height="4000" frameborder="0" scrolling="no"></iframe></p>

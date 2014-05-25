@@ -1,0 +1,21 @@
+---
+layout: post
+status: publish
+published: true
+title: Done!
+author: Martijn Dashorst
+author_login: admin
+author_email: martijn.dashorst@gmail.com
+author_url: http://martijndashorst.com
+wordpress_id: 166
+wordpress_url: http://martijndashorst.com/2005/06/29/done/
+date: '2005-06-29 10:30:59 +0200'
+date_gmt: '2005-06-29 10:30:59 +0200'
+categories:
+- wicket
+- java
+tags: []
+comments: []
+---
+<p>The presentation has been given, I'm finally of the hook. All things considered I think the presentation was great, albeit short. The number of slides was pretty high, but somehow Wicket makes development so easy that there's not much to explain. We did the whole of the slides and demo in 40 minutes (we started 5 minutes early, according to the alarm clock), thus leaving a lot of room for questions. Fortunately the questions about Wicket were all great (no flamebaits) and with some help of my co-developers all were answered satisfactory.</p>
+<p>The turnup, considering we were competing against Spring and AJAX, pretty good, we think somewhere between 200 and 300 people attended. To all that attended, thank you. I hope you enjoyed the presentation and will consider using Wicket as your main web application framework.</p>

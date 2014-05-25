@@ -1,0 +1,26 @@
+---
+layout: page
+status: publish
+published: true
+title: About Martijn Dashorst
+author: Martijn Dashorst
+author_login: admin
+author_email: martijn.dashorst@gmail.com
+author_url: http://martijndashorst.com
+wordpress_id: 2
+date: '2006-12-31 10:42:54 +0100'
+date_gmt: '2006-12-31 09:42:54 +0100'
+categories:
+- Uncategorized
+tags: []
+comments: []
+---
+<p>This web site is dedicated to the things I love. I am Martijn Dashorst, a software engineer with a passion for my girlfriend, my cats and a web application framework called <a title="Wicket" href="http://wicketframework.org">Wicket</a>.</p>
+<p>Diana is my highschool sweetheart for over 18 years and we're happily living together. We met (corny) at the local dance school when we were 16 and ever since have been together. It still amazes me that we have been together for over half our lives already.</p>
+<p>Fortunately we share almost the same passions: diving, cats, fantasy books, CSI, Dr Who, <a href="/blog/photos">digital photography</a> and more. The only thing we disagree on is my passion for Wicket. Unfortunately we haven't been able to dive the last two years, which is a shame really, since we have an underwater digital camera with an external strobe, allowing for great pictures.</p>
+<p>My cats are Lotje and Puc (named after the lead character of the Magician novel by Raymond Feist). The oldest cat, Lotje past away on December 28 2006 after being diagnosed with cancer in her mouth. We will miss her and as a tribute to her, I'll post some old time memories and photos to this space.</p>
+<h2>Professional career</h2>
+<p> </p>
+<p>Over the years of being a software engineer Martijn has been very keen to master the art of software development. His favorite technology books include The Pragmatic Programmer, Java Puzzlers, Effective java and Extreme Programming Explained.</p>
+<p>In 2002 Martijn switched from C programming to Java programming and never looked back. While commuting he read all articles related to Java programming he could lay his hands on and became quickly adept in the Java server side landscape of frameworks and libraries.</p>
+<p>While building his first web application using Maverick and Velocity he never felt comfortable until Apache Wicket was thrown before him. Since then he has been evangelizing Wicket throughout the world, and together with his friend Eelco Hillenius wrote the essential book on Java web development using Wicket: Wicket in Action.</p>

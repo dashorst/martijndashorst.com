@@ -1,0 +1,178 @@
+---
+layout: post
+status: publish
+published: true
+title: 3... 2... 1... Apache Wicket
+author: Martijn Dashorst
+author_login: admin
+author_email: martijn.dashorst@gmail.com
+author_url: http://martijndashorst.com
+wordpress_id: 275
+wordpress_url: http://martijndashorst.com/blog/2007/06/20/3-2-1/
+date: '2007-06-20 21:29:50 +0200'
+date_gmt: '2007-06-20 20:29:50 +0200'
+categories:
+- wicket
+tags: []
+comments:
+- id: 4448
+  author: Frank Bille's Weblog
+  author_email: ''
+  author_url: http://billen.dk/2007/06/20/wicket-apache-wicket/
+  date: '2007-06-20 22:32:52 +0200'
+  date_gmt: '2007-06-20 21:32:52 +0200'
+  content: |-
+    <strong>Wicket =&gt; Apache Wicket...</strong>
+
+    Wicket has graduated from Apache Incubator and has now become an Apache top level project. I would like to thank all the guys who made this possible and especially Martijn (our new PMC Chair). I&#8217;m trying to plan a little get-together/meeting in C...
+- id: 4455
+  author: rue&#8217;s headroom &raquo; Blog Archiv &raquo; Wicket ist Apache Top Level
+    Projekt
+  author_email: ''
+  author_url: http://www.2rue.de/hacking/wicket/wicket-ist-apache-top-level-projekt/
+  date: '2007-06-21 00:29:17 +0200'
+  date_gmt: '2007-06-20 23:29:17 +0200'
+  content: "[...] 3â€¦ 2â€¦ 1â€¦ Wicket Graduates! [...]"
+- id: 4459
+  author: Wicket is now a top level Apache project &laquo; Chillenious!
+  author_email: ''
+  author_url: http://chillenious.wordpress.com/2007/06/20/wicket-is-now-a-top-level-apache-project/
+  date: '2007-06-21 01:16:57 +0200'
+  date_gmt: '2007-06-21 00:16:57 +0200'
+  content: "[...] I&#8217;d like to parrot Martijn, thanking the board, our mentors
+    and ourselves for getting there. Hieperdepiep&#8230; hoera! [...]"
+- id: 4486
+  author: G.
+  author_email: iguane18@yahoo.fr
+  author_url: ''
+  date: '2007-06-21 07:55:34 +0200'
+  date_gmt: '2007-06-21 06:55:34 +0200'
+  content: Congratulations! Great news!
+- id: 4491
+  author: Apache Wicket! at ejeklint-dot-se
+  author_email: ''
+  author_url: http://www.ejeklint.se/blog/2007/06/21/apache-wicket/
+  date: '2007-06-21 08:57:39 +0200'
+  date_gmt: '2007-06-21 07:57:39 +0200'
+  content: "[...] Wicket has been graduated to a top level Apache project. My very
+    best congratulations! And soon we will have Wicket 1.3 and a smashing new book
+    on Wicket as well, so the future looks just great.Â I have been off working with
+    my own Wicket projects for a while, but now it&#8217;s time get working with Irrigator
+    again, and make my heating controller better adapted for use with mobile phones.
+    I used fancy Ajax stuff for it&#8217;s very simple GUI, not realising that the
+    Sony-Ericsson phones doesn&#8217;t do Ajax&#8230; Silly me. Now where&#8217;s
+    my iPhone!? [...]"
+- id: 4497
+  author: Amit Agarwalla
+  author_email: angraze@yahoo.com
+  author_url: http://angraze.wordpress.com
+  date: '2007-06-21 10:13:19 +0200'
+  date_gmt: '2007-06-21 09:13:19 +0200'
+  content: Wow. Excellent news. Congratulations to all. I bumped into Wicket a year
+    and quarter back and  must admit that i was impressed with it and recommended
+    to my colleagues though i could not sell it. Over the last year it has gained
+    significant mileage and with this announcement i feel we have a strong case.
+- id: 4560
+  author: RenÃ© Vangsgaard
+  author_email: rene.vangsgaard@gmail.com
+  author_url: ''
+  date: '2007-06-22 09:42:27 +0200'
+  date_gmt: '2007-06-22 08:42:27 +0200'
+  content: "Great news. Martijn, I met you last year at TSS Barcelona, and it's good
+    to see that your hard work with Wicket is rewarded; I hope the Apache brand will
+    further expand Wickets use around the globe. It's been a while since I have used
+    Wicket (I am not doing much web programming for now). but Wicket is my first pick
+    when I will make web apps again, as I really like the clean separation of HTML
+    and Java, and the no-brainer way to Ajax-enable your app.\r\n\r\nCongratulations."
+- id: 4670
+  author: 'Sylvain Wallez: Apache Wicket | Server software'
+  author_email: ''
+  author_url: http://correctserver.com/sylvain-wallez-apache-wicket/
+  date: '2007-06-24 12:30:03 +0200'
+  date_gmt: '2007-06-24 11:30:03 +0200'
+  content: "[...] Read more on this from Martijn, Eelco, Bertrand and Jean-Baptiste.
+    \  24 Jun 07 |  Source link  | Apache | | On Server Also: [...]"
+- id: 6741
+  author: 'A Wicket Diary&raquo; Blog Archive &raquo; Homeless guy finds new home:
+    wicket.apache.org'
+  author_email: ''
+  author_url: http://martijndashorst.com/blog/2007/07/22/homeless-guy-finds-new-home-wicketapacheorg/
+  date: '2007-07-22 17:10:31 +0200'
+  date_gmt: '2007-07-22 16:10:31 +0200'
+  content: "[...] With Wicket&#8217;s recent graduation we had become homeless: the
+    Incubator didn&#8217;t want us anymore (you&#8217;re graduated, get out!), and
+    our TLP was not yet established. In the mean time, the universe seemed to conspire
+    against us: lethal solar flares tried to divert infrastructure&#8217;s attention
+    to burning machines. But we prevailed! [...]"
+- id: 8854
+  author: Wicket is now a top level Apache project &laquo; Chillenius&#8217;s Weblog
+  author_email: ''
+  author_url: http://chillenius.wordpress.com/2007/08/23/wicket-is-now-a-top-level-apache-project/
+  date: '2007-08-23 04:32:44 +0200'
+  date_gmt: '2007-08-23 03:32:44 +0200'
+  content: "[...] Iâ€™d like to parrot Martijn, thanking the board, our mentors and
+    ourselves for getting there. Hieperdepiepâ€¦ hoera! [...]"
+---
+<p>
+We have Graduation! The <a href="http://wicketframework.org">Wicket</a> project is established as the <a href="http://incubator.apache.org/wicket">Apache Wicket</a> project within the <a href="http://www.apache.org/">Apache Software Foundation</a>.</p>
+<p>
+From <a href="http://www.lyra.org/greg/">Greg Stein</a>:</p>
+<pre>
+	-------- Original Message --------
+	Subject: Apache Board Meeting, June 20, 2007 (new officers!)
+	Date: Wed, 20 Jun 2007 12:45:06 -0700
+	From: Greg Stein
+	Reply-To: members@
+	To: members@
+
+	Hi all,
+
+	Today, the newly-elected Board met for the first time. After we got
+	done with our regular series of project reviews and other reports, we
+	elected a new slate of executive officers. I'm happy to present that
+	list:
+
+	 Jim Jagielski, Chairman
+	 Justin Erenkrantz, President
+	 J Aaron Farr, Treasurer
+	 Sam Ruby, Exec VP and Secretary
+
+	Welcome guys to your new offices!
+
+	We also established new three projects:
+
+	* Apache Quetzalcoatl: this springs mod_python and related bits out of
+	the HTTPD project into its own TLP. Gregory Trubetskoy is its Chair.
+
+	* Apache Wicket: this is a light webapp framework for Java, graduating
+	from the Incubator into its own TLP. Martijn Dashorst is the new
+	Chair.
+
+	* Apache Commons: this is the venerable Apache Jakarta Commons, now
+	spun out into its own TLP, with Torsten Curdt as its Chair.
+
+	Finally, we swapped a couple PMC Chairs:
+
+	* Will Glass-Hussin replaces Henning Schmiedehausen as the Velocity Chair
+	* David Sean Taylor replaces Santiago Gala as the Portals Chair
+
+
+	That's it for this month. Please feel free to forward this to any
+	public/private forum as you see fit. If you have any questions, then
+	please don't hesitate to ask myself or any other Director or officer.
+
+	Cheers,
+	-g
+</pre>
+<p>
+From this rather obscure blog, I would like to congratulate all Wicket community members with this remarkable feat! Furthermore, I like to thank the Board of the Apache Software Foundation for the trust they invested in us. We will not disappoint!</p>
+<p>
+I personally would like to thank Wicket's mentors:</p>
+<ul>
+<li>Alex Karasulu (whose birthday coincidentally is today... what a better gift could you receive). Thanks for bringing us on board!</li>
+<li>Upayavira, who made the transition even run smoother than thought possible. Thanks for guiding us and I hope you'll stay for a long time with our project!</li>
+<li>Bertrand Delacretaz, thank you for your help, votes and advise. We will miss your involvement, but will certainly see you in the future!</li>
+<li>Sylvain Wallez, also big thanks for helping and guiding us. I hope Wicket is still working within Joost</li>
+</ul>
+<p>
+Finally, congratulations to the new officers, PMC Chairs and the other two new projects: Apache Quetzalcoatl and Apache Commons! Welcome to the club!</p>

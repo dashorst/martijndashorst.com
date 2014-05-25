@@ -1,0 +1,45 @@
+---
+layout: page
+status: publish
+published: true
+title: Shop
+author: Martijn Dashorst
+author_login: admin
+author_email: martijn.dashorst@gmail.com
+author_url: http://martijndashorst.com
+wordpress_id: 365
+wordpress_url: http://martijndashorst.com/blog/shop/
+date: '2008-05-25 16:56:04 +0200'
+date_gmt: '2008-05-25 15:56:04 +0200'
+categories:
+- wicket
+tags: []
+comments:
+- id: 56905
+  author: Wicket starter kit | A Wicket Diary
+  author_email: ''
+  author_url: http://martijndashorst.com/blog/2008/05/25/wicket-starter-kit/
+  date: '2008-05-25 22:46:59 +0200'
+  date_gmt: '2008-05-25 21:46:59 +0200'
+  content: "[...] read this blog directly on the web you will notice something new
+    in the site structure: links to a shop. In this shop I have collected several
+    books that complement Wicket in [...]"
+- id: 66764
+  author: "?????? ?? ???"
+  author_email: shielahartigan@gmail.com
+  author_url: http://goo.gl/ge81gg
+  date: '2014-02-26 00:02:08 +0100'
+  date_gmt: '2014-02-25 23:02:08 +0100'
+  content: "?????? ??? ??? ????? ??????. ??? \r\n??????? ?? ???"
+---
+<p>The Wicket Store lists recommended books by Martijn Dashorst. Martijn is co-author of <a href="http://astore.amazon.com/awidi-20/detail/1932394982/002-7369544-0148849">Wicket in Action</a> and a long time committer to the <a href="http://wicket.apache.org">Apache Wicket</a> framework.</p>
+<h2>Wicket starter kit</h2>
+<p>When you want to begin to build your first Wicket application, you may be interested in the <a href="http://martijndashorst.com/blog/shop/wicket-starter-kit/">Wicket starter kit</a> which consists of a Wicket, Spring and Hibernate book. With these technologies you will be able to build enterprise grade applications on a web shop budget.</p>
+<h2>Other books</h2>
+<p>The shop currently lists the following categories:</p>
+<ul>
+<li><a href="http://martijndashorst.com/blog/shop/ajaxjavascript-books/">Ajax and JavaScript books</a></li>
+<li><a href="http://martijndashorst.com/blog/shop/databaseormenterprise/">Database, ORM and Enterprise</a> integration books</li>
+<li><a href="http://martijndashorst.com/blog/shop/testing/">Testing books</a></li>
+</ul>
+<p><a href="http://wicket.apache.org">Apache Wicket</a> is a trademark of <a href="http://apache.org">The Apache Software Foundation</a>. This store is in no way endorsed or associated to <a href="http://apache.org">The Apache Software Foundation</a>.</p>

@@ -1,0 +1,79 @@
+---
+layout: post
+status: publish
+published: true
+title: Maven 2 rant
+author: Martijn Dashorst
+author_login: admin
+author_email: martijn.dashorst@gmail.com
+author_url: http://martijndashorst.com
+wordpress_id: 92
+wordpress_url: http://martijndashorst.com/2006/02/26/maven-2-rant/
+date: '2006-02-26 21:10:55 +0100'
+date_gmt: '2006-02-26 21:10:55 +0100'
+categories:
+- java
+- maven
+tags: []
+comments:
+- id: 105
+  author: Phillip Rhodes
+  author_email: mindcrime@cpphacker.co.uk
+  author_url: http://www.jroller.com/page/mindcrime
+  date: '2006-02-27 17:01:07 +0100'
+  date_gmt: '2006-02-27 17:01:07 +0100'
+  content: |-
+    Maven still strikes me as a solution looking
+    for a problem.  It adds a lot of complexity for what is, IMO, not a lot of value.  And it comes off as brittle, flaky and generally unreliable; which leads me to ask why anybody at all would use it?
+
+    I'm honestly not seeing what makes maven so compelling (or even marginally attractive) to people.
+---
+<p>I'm a big fan of maven, but now that I am trying to move the build of <a href="http://wicket.sf.net">Wicket</a> to Maven 2, I'm in a big world of hurt.</p>
+<p>
+First of all, my customized website generation stopped working, because they wanted to move to APT. Now that is excusable, as the custom Jelly script I created for doing this is a lot more magic than the velocity template I now can use. But the stylesheet I have crafted stopped working correctly with some of the automatic generated pages. And I can't supply my own templates for some of the reports they have. The current dependency report is much too basic in my opinion and I'd rather change it: it takes too much horizontal space.</p>
+<p>
+The assembly plugin is quite promising, as long as you keep to the maven standards. I am able to create a nice packaged source+bin zip file, using the assembly descriptor. This works pretty well, until you want to do the same for a WAR file where you only want to add the direct dependencies instead of /all/ transitive dependencies:</p>
+<p><pre>-rw-r--r--   1 martijn  martijn   165119 Feb 12 22:20 commons-collections-2.1.jar
+-rw-r--r--   1 martijn  martijn   169763 Feb 12 22:23 commons-lang-2.0.jar
+-rw-r--r--   1 martijn  martijn    38015 Jan 29 13:33 commons-logging-1.0.4.jar
+-rw-r--r--   1 martijn  martijn   313898 Feb 12 22:27 dom4j-1.6.1.jar
+-rw-r--r--   1 martijn  martijn   411014 Feb 12 22:28 httpunit-1.6.jar
+-rw-r--r--   1 martijn  martijn  2450757 Feb 12 22:35 icu4j-2.6.1.jar
+-rw-r--r--   1 martijn  martijn   181664 Feb 12 22:29 jasper-compiler-4.1.30.jar
+-rw-r--r--   1 martijn  martijn    72406 Feb 12 22:34 jasper-runtime-4.1.30.jar
+-rw-r--r--   1 martijn  martijn   231706 Feb 12 22:28 jaxen-1.1-beta-8.jar
+-rw-r--r--   1 martijn  martijn    30479 Feb 12 22:28 jaxme-api-0.3.jar
+-rw-r--r--   1 martijn  martijn   153253 Feb 12 22:29 jdom-1.0.jar
+-rw-r--r--   1 martijn  martijn   699081 Feb 12 22:28 js-1.6R1.jar
+-rw-r--r--   1 martijn  martijn   137835 Feb 12 22:35 jtidy-4aug2000r7-dev.jar
+-rw-r--r--   1 martijn  martijn   121070 Jan 29 13:38 junit-3.8.1.jar
+-rw-r--r--   1 martijn  martijn    36572 Feb 12 22:34 jwebunit-1.2.jar
+-rw-r--r--   1 martijn  martijn   358085 Feb  9 22:21 log4j-1.2.12.jar
+-rw-r--r--   1 martijn  martijn   105672 Feb 12 22:30 nekohtml-0.9.5.jar
+-rw-r--r--   1 martijn  martijn   575351 Feb 12 22:31 org.mortbay.jetty-4.2.24.jar
+-rw-r--r--   1 martijn  martijn   105883 Feb 12 22:29 pull-parser-2.jar
+-rw-r--r--   1 martijn  martijn    19097 Feb 12 22:29 relaxngDatatype-20030807.jar
+-rw-r--r--   1 martijn  martijn    77977 Jan 29 13:33 servlet-api-2.3.jar
+-rw-r--r--   1 martijn  martijn    25863 Feb 12 22:30 stax-api-1.0.jar
+-rw-r--r--   1 martijn  martijn    38025 Feb 12 22:28 tagsoup-0.9.7.jar
+-rw-r--r--   1 martijn  martijn   929053 Feb 26 09:52 wicket-1.2-beta1.jar
+-rw-r--r--   1 martijn  martijn   274677 Feb 26 09:53 wicket-extensions-1.2-beta1.jar
+-rw-r--r--   1 martijn  martijn  3149655 Feb 12 22:37 xalan-2.6.0.jar
+-rw-r--r--   1 martijn  martijn   895924 Feb 12 22:32 xerces-2.4.0.jar
+-rw-r--r--   1 martijn  martijn  1010675 Feb 12 22:33 xercesImpl-2.6.2.jar
+-rw-r--r--   1 martijn  martijn   109318 Feb 12 22:29 xml-apis-1.0.b2.jar
+-rw-r--r--   1 martijn  martijn   124724 Feb 12 22:34 xmlParserAPIs-2.6.2.jar
+-rw-r--r--   1 martijn  martijn   104102 Feb 12 22:30 xom-1.0b3.jar
+-rw-r--r--   1 martijn  martijn    93395 Feb 12 22:29 xpp3-1.1.3.3.jar
+-rw-r--r--   1 martijn  martijn   246365 Feb 12 22:34 xsdlib-20030807.jar</pre>
+<p>How many xml dependencies can you discover here?</p>
+<p>
+The old way of annotating a dependency to be included in your WAR archive was much easier than the soup I'm in now. I have to tag all my dependencies as compile scope, and then exclude the ones I don't need.</p>
+<p>
+I know it is hard for projects to write documentation when you have so much coding to do. Heck, even Wicket is a victim of the too many programmers, too few writers syndrome. I have a lot of respect for what the maven guys have accomplished in documenting so far, but it is still too scattered, too little and confusing. The user mailinglist of maven is such high traffic, my google mail can't even keep up.</p>
+<p>
+In the very least make sure the documentation doesn't contain errors. I had a blast figuring out why the changes plugin (now part of codehaus, instead of the default maven distro?) didn't want to execute. Turns out that <a href="http://mojo.codehaus.org/changes-maven-plugin/howto.html">the documentation tells</a> you to add a dependency on the SNAPSHOT version of the plugin, instead of the final (i.e. BETA) version of the plugin. Fortunately I have about 100000 user mailinglist messages in my google mail account, so googling on the error showed a message from several weeks ago that the SNAPSHOT string had to be removed.</p>
+<p>
+Even the pom.xml hasn't been documented properly, and this is the most fundamental artifact of a maven project. I see a lot of concepts there that don't have an explanation anywhere. <tt>execution</tt>, <tt>modules</tt>?</p>
+<p>
+The maven team has created a bohemoth to maintain, and I pity them for that. There was a lot of work to be done, but I think the move to maven 2 was too soon and too drastic. The complexity they have added to a build system may be necessary but then I think very good and complete documentation is also necessary.</p>

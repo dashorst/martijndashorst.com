@@ -1,0 +1,11 @@
+# Site settings
+title: blog:dashorst
+username: dashorst
+email: martijn.dashorst@gmail.com
+description: "Soort van omschrijving"
+baseurl: ""
+url: "http://martijndashorst.com"
+permalink: /blog/:year/:month/:title
+
+# Build settings
+markdown: kramdown
