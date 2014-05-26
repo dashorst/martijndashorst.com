@@ -30,7 +30,7 @@ comments:
 ---
 
 It has been 5 years since [Maurice Marrink and his brother Michel
-passed away]({% post_url 2008/2008-08-04-a-farewell-to-maurice-marrink %})
+passed away](/blog/2008/08/a-farewell-to-maurice-marrink)
 after a tragic car accident. I can't imagine the pain and loss their
 parents and their sister must feel even after these years.
 
