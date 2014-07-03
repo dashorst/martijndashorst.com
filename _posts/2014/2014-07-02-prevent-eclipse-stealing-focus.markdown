@@ -33,10 +33,10 @@ article](http://www.cnet.com/news/keep-applications-from-stealing-focus-
 when-opening-in-os-x/)): add the following two (2!) lines of XML to
 Eclipse's plist file in the dist section:
 
-``` xml
+{% highlight xml %}
 <key>LSBackgroundOnly</key>
 <string>True</string>
-```
+{% endhighlight %}
 
 This will prevent the application from stealing the focus when you are
 busy with other things. You can modify this yourself while waiting for
