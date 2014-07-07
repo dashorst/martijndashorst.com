@@ -124,6 +124,6 @@ Our new model:
 9. Profit!
 
 [1]: http://stackoverflow.com/questions/24530185/how-to-disable-apt-web-service-validation-in-eclipse-4-4-edition-for-javaee-deve
-[2]: http://joxos.eclipsesource.com
+[2]: http://yoxos.eclipsesource.com
 [3]: https://code.google.com/p/qwickie/
 [4]: http://grumpyapache.blogspot.nl/2011/08/mess-that-is-m2e-connectors.html
