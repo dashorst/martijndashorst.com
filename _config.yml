@@ -5,7 +5,7 @@ email: martijn.dashorst@gmail.com
 description: "written by Martijn Dashorst"
 baseurl: ""
 url: "http://martijndashorst.com"
-permalink: /blog/:year/:month/:title
+permalink: /blog/:year/:month/:day/:title
 
 # Build settings
 markdown: kramdown
