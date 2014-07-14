@@ -10,7 +10,7 @@ date: '2014-07-15 01:30:00 +0100'
 date_gmt: '2014-07-15 00:30:00 +0100'
 ---
 
-At work (Topicus) we just released a M2E plugin for Eclipse that
+At work (Topicus) we just [released a M2E plugin][1] for Eclipse that
 enables you to manage your workspace settings for your team from your
 Maven POM file.
 
@@ -83,7 +83,7 @@ total 160
 -rw-r--r--  1 dashorst  staff    403 Nov 29  2013 org.eclipse.wst.validation.prefs
 -rw-r--r--  1 dashorst  staff     77 Aug 25  2013 org.hibernate.eclipse.console.prefs
 -rw-r--r--  1 dashorst  staff    262 Nov 29  2013 org.maven.ide.eclipse.prefs
-$
+$ 
 {% endhighlight %}
 
 Unfortunately with the advent of Eclipse 4.3 and its M2E integration,
@@ -103,5 +103,10 @@ For more information about the M2E Settings plugin, take a look at the
 Eclipse Marketplace somewhere tomorrow, making it easier to find and
 install.
 
+This plugin was made possible by [Olivier
+Nouguier](https://github.com/cheleb), so many thanks for his initial
+work.
+
+Go check out the [M2E Settings Plugin][1] and have fun!
 
 [1]: https://github.com/topicusonderwijs/m2e-settings
