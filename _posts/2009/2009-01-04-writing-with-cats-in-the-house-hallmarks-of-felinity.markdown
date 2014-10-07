@@ -27,4 +27,4 @@ As a cat owner I really enjoy the special care and attention Brooke puts into on
 <p>
 Today's comic depicts a situation all to familiar to me:</p>
 <p>
-<a href="http://comics.com/9_chickweed_lane/2009-01-04/" title="9 Chickweed Lane"><img src="http://assets.comics.com/dyn/str_strip/000000000/00000000/0000000/200000/60000/9000/300/269371/269371.full.gif" border="0" alt="9 Chickweed Lane" /></a></p>
+<a href="http://gocomics.com/9_chickweed_lane/2009-01-04/" title="9 Chickweed Lane"><img src="http://assets.amuniversal.com/f9cc55f0824e012f2fe000163e41dd5b" border="0" alt="9 Chickweed Lane" /></a></p>
