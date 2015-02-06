@@ -29,4 +29,4 @@ by Tim Urban should be on your list:
 > relieved, content, satisfied, and glad, and why Braveheart was great
 > but The Patriot was terrible.
 
-Read it all.
+Read it all. [Part 2 is also available](http://waitbutwhy.com/2015/01/artificial-intelligence-revolution-2.html).
