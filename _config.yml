@@ -2,7 +2,7 @@
 title: blog:dashorst
 username: dashorst
 email: martijn.dashorst@gmail.com
-description: "written by Martijn Dashorst"
+description: "By Martijn Dashorst"
 baseurl: ""
 url: "http://martijndashorst.com"
 permalink: /blog/:year/:month/:day/:title
