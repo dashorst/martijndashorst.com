@@ -1,8 +1,9 @@
 # Site settings
 title: blog:dashorst
+subtitle: "By Martijn Dashorst"
 username: dashorst
 email: martijn.dashorst@gmail.com
-description: "By Martijn Dashorst"
+description: "A blog written and maintained by Martijn Dashorst"
 baseurl: ""
 url: "http://martijndashorst.com"
 permalink: /blog/:year/:month/:day/:title
