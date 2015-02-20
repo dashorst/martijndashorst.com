@@ -10,7 +10,7 @@ author_url: http://martijndashorst.com
 date: '2015-02-20 21:00:00 +0100'
 ---
 
-Unreal what happens to Brianna Wu. I admire her will to continu to
+Unreal what happens to Brianna Wu. I admire her will to continue to
 fight the good fight and I hope she'll be safe. Nobody deserves what
 she has to go through. This is from 9 days ago:
 
