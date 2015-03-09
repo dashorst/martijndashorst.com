@@ -17,7 +17,7 @@ reporting.
 
 Exhibit A:
 
-```
+<pre lang="java">
 14:47:37,980 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-15) MSC000001: Failed to start service jboss.deployment.subunit."eduarte-deliverable-dev-ear.ear"."eduarte-common-dao-2.42-SNAPSHOT.jar".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.subunit."eduarte-deliverable-dev-ear.ear"."eduarte-common-dao-2.42-SNAPSHOT.jar".PARSE: JBAS018733: Failed to process phase PARSE of subdeployment "eduarte-common-dao-2.42-SNAPSHOT.jar" of deployment "eduarte-deliverable-dev-ear.ear"
 	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:166) [wildfly-server-8.1.0.Final.jar:8.1.0.Final]
 	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
@@ -34,9 +34,11 @@ Caused by: org.jboss.msc.service.ServiceNotFoundException: Service service jboss
 	at org.jboss.as.ejb3.deployment.processors.AbstractDeploymentUnitProcessor.deploy(AbstractDeploymentUnitProcessor.java:81)
 	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:159) [wildfly-server-8.1.0.Final.jar:8.1.0.Final]
 	... 5 more
-```
+</pre>
+
 And a couple of hundred lines below:
-```
+
+<pre lang="java">
 14:47:42,608 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("deploy") failed - address: ([("deployment" => "eduarte-deliverable-dev-ear.ear")]) - failure description: {"JBAS014671: Failed services" => {"jboss.deployment.subunit.\"eduarte-deliverable-dev-ear.ear\".\"eduarte-common-dao-2.42-SNAPSHOT.jar\".PARSE" => "org.jboss.msc.service.StartException in service jboss.deployment.subunit.\"eduarte-deliverable-dev-ear.ear\".\"eduarte-common-dao-2.42-SNAPSHOT.jar\".PARSE: JBAS018733: Failed to process phase PARSE of subdeployment \"eduarte-common-dao-2.42-SNAPSHOT.jar\" of deployment \"eduarte-deliverable-dev-ear.ear\"
     Caused by: org.jboss.msc.service.ServiceNotFoundException: Service service jboss.ejb.default-resource-adapter-name-service not found"}}
 14:47:42,642 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "eduarte-portal-eo-student.war" (runtime-name : "eduarte-portal-eo-student.war")
@@ -61,7 +63,7 @@ JBAS014777:   Services which failed to start:      service jboss.deployment.subu
 
 14:47:47,715 WARN  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) JBAS015002: Deployment of 'eduarte-web-main.war' requested, but the deployment is not present
 14:47:47,715 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) JBAS015003: Found eduarte-deliverable-dev-ear.ear in deployment directory. To trigger deployment create a file called eduarte-deliverable-dev-ear.ear.dodeploy
-```
+</pre>
 
 Apparently something is missing, but the stack traces don't contain any code that is under my 
 purview, and the error message is really clear and helpful in identifying what is missing:
@@ -79,7 +81,7 @@ What the hell is Wildfly trying to tell me?
 The solution (of course) is to run the configuration script that is external to our application,
 in order to tell Wildfly that a new message queue should be added:
 
-```
+<pre lang="java">
 15:03:30,952 WARN  [org.jboss.messaging] (management-handler-thread - 2) JBAS011618: There is no resource matching the expiry-address jms.queue.ExpiryQueue for the address-settings #, expired messages from destinations matching this address-setting will be lost!
 15:03:30,952 WARN  [org.jboss.messaging] (management-handler-thread - 2) JBAS011619: There is no resource matching the dead-letter-address jms.queue.DLQ for the address-settings #, undelivered messages from destinations matching this address-setting will be lost!
 15:03:31,033 WARN  [org.jboss.as.messaging] (MSC service thread 1-16) JBAS011600: AIO wasn't located on this platform, it will fall back to using pure Java NIO. If your platform is Linux, install LibAIO to enable the AIO journal
@@ -102,6 +104,6 @@ in order to tell Wildfly that a new message queue should be added:
 15:03:31,908 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-10) IJ020002: Deployed: file://RaActivatorhornetq-ra
 15:03:31,910 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-5) JBAS010401: Bound JCA ConnectionFactory [java:/messaging/JmsXA]
 15:03:31,910 INFO  [org.jboss.as.messaging] (MSC service thread 1-16) JBAS011601: Bound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
-```
+</pre>
 
 Unfortunately the original error message did not provide any useful insights as to what was missing.
