@@ -1,3 +1,7 @@
+---
+layout: post
+status: publish
+published: true
 title: Improve Error Reporting in Java EE
 ---
 
