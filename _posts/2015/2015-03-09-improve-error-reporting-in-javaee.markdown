@@ -73,7 +73,7 @@ Which is caused by:
 What the hell is Wildfly trying to tell me?
 
 The solution (of course) is to run the configuration script that is external to our application,
-in order to tell Wildfly that a new queue should be added:
+in order to tell Wildfly that a new message queue should be added:
 
 ```
 15:03:30,952 WARN  [org.jboss.messaging] (management-handler-thread - 2) JBAS011618: There is no resource matching the expiry-address jms.queue.ExpiryQueue for the address-settings #, expired messages from destinations matching this address-setting will be lost!
