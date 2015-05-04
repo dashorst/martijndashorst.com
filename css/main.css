@@ -240,6 +240,7 @@ article img {
   -moz-border-radius: 3px;
   border-radius: 3px;
   font-size: 15px;
+  overflow-x: auto;
 }
 
 .post code { padding: 1px 5px; }
