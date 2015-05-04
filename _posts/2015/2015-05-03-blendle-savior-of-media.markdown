@@ -8,8 +8,8 @@ title: Is Blendle the Savior of Traditional Media?
 Ever since we invited [Alexander Klöpping][1] to our [company's
 conference][2] as a keynote speaker I have been following his
 endeavors. He's a busy fellow and does some amazing stuff. He's created
-the [Universisty of Netherland][3], a televised series of lectures rich
-in media by renowned professors. And he created a startup that is
+the [University of the Netherland][3], a televised series of lectures
+rich in media by renowned professors. And he created a startup that is
 shaking up old media.
 
 ![Blendle][i1]
