@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true 
-title: A Better HTML Autofocus implementation
+title: A Better HTML Autofocus Implementation
 ---
 
 So you have this login form with a username and password field.
