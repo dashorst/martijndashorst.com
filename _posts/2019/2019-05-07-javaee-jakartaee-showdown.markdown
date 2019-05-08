@@ -5,7 +5,7 @@ published: false
 title: The Future of Jakarta EE in the Wake of JavaEE
 ---
 
-_Gentle doctors make stinking wounds_--dutch proverb
+_Gentle doctors make stinking wounds_ -- dutch proverb
 
 In the wake of the announcement that Oracle won't provide the `javax` namespace to the Jakarta EE community to allow for modifications and future development within the existing APIs, I would like to vent my opinion.
 
