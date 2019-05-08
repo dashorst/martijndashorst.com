@@ -1,13 +1,13 @@
 ---
 layout: post
-status: draft
-published: false
+status: publish
+published: true
 title: The Future of Jakarta EE in the Wake of JavaEE
 ---
 
 _Gentle doctors make stinking wounds_ -- dutch proverb
 
-In the wake of the announcement that Oracle won't provide the `javax` namespace to the Jakarta EE community to allow for modifications and future development within the existing APIs, I would like to vent my opinion.
+In the wake of [the announcement][mike1] that Oracle won't provide the `javax` namespace to the Jakarta EE community to allow for modifications and future development within the existing APIs, I would like to vent my opinion.
 
 First of all, I'm grateful to Oracle for providing all the standards work, code and documentation to the Jakarta community.
 This was not a light endeavor, and has cost millions of real money.
@@ -32,6 +32,9 @@ This will delay the release of Jakarta EE 8, but I don't think anyone was anxiou
 There are some folks that are pushing hard for microprofile as the successor of JavaEE, not Jakarta EE.
 I don't agree with them.
 If you work in the microprofile projects it is easy to see the rest of the world as ancient, e.g. not see the forrest through the trees.
+An enormous amount of code depends on JavaEE and the evolution of the parts of JavaEE.
+We are not asking for revolution, but evolution of those components.
+If you want revolution, then by all means switch to microprofile or quarkus, but those are always suitable for all applications.
 
 Other folks want a clean slate for Jakarta EE, so they can pick and choose from JavaEE for the future.
 This is effectively the _on a per-case basis_ migration option. 
@@ -54,3 +57,4 @@ In short: please do a big bang release of Jakarta EE 8 including the package ren
 
 [struberg1]: https://struberg.wordpress.com/2019/05/06/the-way-forward-for-jakartaee-packages/
 [blevins1]: https://www.eclipse.org/lists/jakartaee-platform-dev/msg00029.html
+[mike1]: https://blogs.eclipse.org/post/mike-milinkovich/update-jakarta-ee-rights-java-trademarks
