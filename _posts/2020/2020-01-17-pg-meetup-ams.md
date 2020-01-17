@@ -23,5 +23,7 @@ Hope to see you there!
 
 If you want to see the slides, you can [find them here][slides].
 
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/iQireUjHBfw2NH" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/dashorst/converting-85-of-dutch-primary-schools-from-oracle-to-postgresql" title="Converting 85% of Dutch Primary Schools from Oracle to PostgreSQL" target="_blank">Converting 85% of Dutch Primary Schools from Oracle to PostgreSQL</a> </strong> from <strong><a href="https://www.slideshare.net/dashorst" target="_blank">Martijn Dashorst</a></strong> </div>
+
 [register]: https://www.meetup.com/PostgreSQL-User-Group-NL/events/267249488/
 [slides]: https://www.slideshare.net/dashorst/converting-85-of-dutch-primary-schools-from-oracle-to-postgresql
