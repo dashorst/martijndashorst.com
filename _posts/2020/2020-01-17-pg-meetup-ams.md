@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: PostgreSQL Meetup: Convertign 85% of Dutch Primary Schools from Oracle to PostgreSQL
+title: "PostgreSQL Meetup: Convertign 85% of Dutch Primary Schools from Oracle to PostgreSQL"
 ---
 
 I have been invited to give my talk "CONVERTING 85% OF DUTCH PRIMARY SCHOOLS FROM ORACLE TO POSTGRESQL" at the Amsterdam PostgreSQL meetup on Thursday, 30 January.
