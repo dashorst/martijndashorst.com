@@ -17,11 +17,11 @@ public class BananaBuilder {}
 @JobScoped
 public class BananaProcessor extends AbstractBatchlet {
     // ...
-	public void processRow(ResultSet rs) {
-	    BananaBuilder bb = ...
+    public void processRow(ResultSet rs) {
+        BananaBuilder bb = ...
 
         ..... do something with the bananabuilder
-	}
+    }
 }
 ```
 
@@ -50,11 +50,11 @@ public class BananaProcessor extends AbstractBatchlet {
     @Inject
     Instance<BananaBuilder> builderInstances;
 
-	public void processRow(ResultSet rs) {
-	    BananaBuilder bb = builderInstances.get();
+    public void processRow(ResultSet rs) {
+        BananaBuilder bb = builderInstances.get();
 
         ..... do something with the bananabuilder
-	}
+    }
 }
 ```
 
