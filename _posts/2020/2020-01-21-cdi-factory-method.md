@@ -63,7 +63,7 @@ This will get a new `BananaBuilder` on each invocation of the
 `BananaBuilder` needs to have `@Dependent` scope, which is the default
 scope if you don't annotate your bean with a specific scope.
 
-=== Conclusion
+### Conclusion
 
 Using CDI to make a new builder inside a loop is not too difficult, but
 it was a bit hard to discover documentation explaining this.
