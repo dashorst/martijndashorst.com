@@ -29,4 +29,4 @@ fill in the class name for the logger.
 I have named this template `log`, so whenever I type `log<ctrl-space>`
 Eclipse will suggest the autocompletion template above.
 
-In many of my classes I need to add some logging. We use SLF4J for that in our projects. But having to type
+This probably will save a couple of hours of your life.
