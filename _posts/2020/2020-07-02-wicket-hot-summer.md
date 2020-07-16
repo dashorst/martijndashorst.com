@@ -4,8 +4,9 @@ status: publish
 published: false
 title: "A Wicket Hot Summer"
 ---
+![](/uploads/wicket-9-postcard.png)
 
-Apache Wicket 9 is about to be released and I've crafted a desktop wallpaper to celebrate that event:
+[Apache Wicket 9][1] has been [released][2] and I've crafted a desktop wallpaper to celebrate that event:
 
 ![](/uploads/wicket-9-desktop-2k.png)
 
