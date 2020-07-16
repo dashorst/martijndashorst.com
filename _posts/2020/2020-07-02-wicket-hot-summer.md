@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: false
+published: true
 title: "A Wicket Hot Summer"
 ---
 ![](/uploads/wicket-9-postcard.png)
