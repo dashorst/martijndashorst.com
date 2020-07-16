@@ -17,5 +17,5 @@ There are two formats: 2k and 4k:
 
 Enjoy!
 
-1: https://wicket.apache.org
-2: https://www.globenewswire.com/news-release/2020/07/15/2062493/0/en/The-Apache-Software-Foundation-Announces-Apache-Wicket-TM-v9.html
+[1]: https://wicket.apache.org
+[2]: https://www.globenewswire.com/news-release/2020/07/15/2062493/0/en/The-Apache-Software-Foundation-Announces-Apache-Wicket-TM-v9.html
