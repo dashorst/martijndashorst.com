@@ -1,0 +1,38 @@
+---
+layout: post
+status: publish
+published: true
+title: "Installing Windows 10 on a M.2 Drive"
+---
+
+When you want to install Windows 10 on a M.2 NVME drive, you have to
+make sure you download the correct Windows installation media otherwise
+the installer won't discover your M.2 drive.
+
+**THIS TOOK ME 8 HOURS TO FIGURE OUT**
+
+When you go to the [Windows 10 download page][1] it doesn't tell you in
+any way that the ISO is completely and utterly unable to install onto a
+M.2 drive. When you do go down this route--and I urge you not to do
+that--you will be presented at the beginning of the installation that
+you need additional drivers.
+
+You have to use the [Installation Media Creation Tool][2] using an
+existing installation of Windows to create an USB installation, _not_
+the DVD/ISO.
+
+Fortunately (**NOT**), Microsoft directs you to the ISO download when
+you try to access the Media Creation Tool page so you assume that the
+ISO Just Works™.
+
+Don't be like me, don't waste 8 hours of your precious time in
+frustration and just create the USB media installation media.
+
+PS. If all you have is macOS, you can try to download [Virtual Box][3]
+and the [Microsoft Edge test virtual machine][4] to run the Installation
+Media Creation Tool.
+
+[1]: https://www.microsoft.com/en-us/software-download/windows10ISO
+[2]: https://www.microsoft.com/software-download/windows10
+[3]: https://www.virtualbox.org
+[4]: https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
