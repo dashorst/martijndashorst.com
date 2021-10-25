@@ -1,6 +1,6 @@
 ---
 layout: post
-status: published
+status: publish
 published: true
 title: "Fedora 34 Workstation Desktop/menu icon"
 ---
