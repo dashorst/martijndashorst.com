@@ -47,7 +47,7 @@ application searches:
 ```
 $ update-desktop-database ~/.local/share/applications/
 ```
-![Eclipse icon shows up in search](eclipse-in-search.png)
+![Eclipse icon shows up in search](/uploades/eclipse-in-search.png)
 
 This was mostly written for myself to remember how to do this, as the search for a
 tutorial for this was quite difficult.
