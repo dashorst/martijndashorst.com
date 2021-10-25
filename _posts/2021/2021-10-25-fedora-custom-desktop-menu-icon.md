@@ -4,8 +4,6 @@ status: publish
 published: true
 title: "Fedora 34 Workstation Desktop/menu icon"
 ---
-# Fedora 34 Workstation Desktop/menu icon
-
 As a new user coming to Desktop Linux, I like Fedora 34 Workstation because 
 it is the only linux distribution that is capable of resuming most of the time 
 after putting my computer to sleep. It is also very fast, and capable on my
