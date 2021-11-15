@@ -37,9 +37,9 @@ Stepping through the code I saw that they try to [start a container for reaping 
 This requires... access to the docker socket. 
 
 I tried starting the ryuk container manually using my shell, but the only way to start it was using the [privileged flag][danwalsh]. Looking at
-the code from testcontainers I noticed ~[they already set the container to run privileged][privileged]~ (**UPDATE** Apparently my reading of the code was wrong
+the code from testcontainers I noticed ~~[they already set the container to run privileged][privileged]~~ (**UPDATE** Apparently my reading of the code was wrong
 and I need to set a flag explicitly to let Ryuk run privileged. The documentation and the mitigation of ryuk at testcontainers is not good in this 
-instance IMO)~, so something janky was happening with SELinux~.
+instance IMO), ~~so something janky was happening with SELinux~~.
 
 One of the tickets mentioned reinstalling containerd, to fix the rights. Looking at some other posts they mentioned installing
 docker-ce.
