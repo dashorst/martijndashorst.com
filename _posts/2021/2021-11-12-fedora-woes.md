@@ -39,3 +39,9 @@ the user interface.
 
 ## The oh-oh parts
 
+- Software update agents keeps hanging
+- Sometimes text in tree view in Eclipse turns bold for no reason
+- Right click popup menu opens on different monitor
+- No easy way to add _self_ downloaded software as a program icon to the menu
+- Unbinding Alt-F5 from Gnome 41 doesn't allow Eclipse to capture the key (apparently you have to completely unbind 
+- 
