@@ -33,7 +33,7 @@ I wrote the shell function below to select the top installed version for the JDK
 
 ```bash
 function jdk() {
-  sdk use java `sdk ls java | grep installed | grep $1 | awk '{print $NF}' | head -1`
+  sdk use java `sdk ls java | grep installed | grep "\s$1" | awk '{print $NF}' | head -1`
 }
 ```
 
@@ -46,3 +46,5 @@ It uses SDKman's functionality to:
 - instructs SDKman to use that version
 
 Have fun with this one!
+
+**PS** Updated the `jdk()` function to use `"\s$1"` to match at the beginning of the version string.
