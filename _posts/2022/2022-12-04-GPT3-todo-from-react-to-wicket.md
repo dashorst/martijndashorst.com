@@ -4,6 +4,8 @@ status: draft
 published: false
 title: "Rewrite a To Do App From React to Wicket Using GPT-3"
 ---
+_NB: This is a draft post, not finished yet_
+
 Open AI has opened up their GPT-3 playground and I was looking at what the
 capabilities of this AI are. So I tried it with a couple of tasks and was
 amazed.
@@ -110,81 +112,95 @@ Thumbs up for the form component! Next up displaying the list of todo items.
 
 The AI also chose to create a Wicket panel component for each todo item in the
 list of todos. While the structure of the code is correct, the implementation
-would not work, as Wicket components need to have their own markup file.
+would not work, as Wicket panel components need to have their own markup file.
 
-The generated markup for this part also shows that GPT-3 has confused using
-`WebMarkupContainer`s and `Panel`s in this instance. It also didn't generate an
-opening `<wicket:panel>` tag, only the close tag.
+It generated a constructor, a `Todo` field and an `onConfigure` method. The
+`todo` field should for production ready code not be added in this way. It is
+bad form to add (JPA) entities directly to your component tree, and you should
+manage those through models. So the AI does have the right idea of passing the
+todo item through an `IModel` parameter, but doesn't make particular good use
+of this.
+
+In the constructor a label for the todo text is added, and two AJAX links: one
+for marking the todo item as done, and one for removing the todo item. The
+event handlers are implemented correctly, even the removal of the todo item
+seems to use the parent component of the just removed panel, which is the
+`ListItem`. The intent seems there, but the implementation not. The rendered
+list markup would not be updated as the todo panel is a child of a `ListView`
+item that would no longer exist during a new rendering of the `ListView`
+component: the todo item was removed and as such no corresponding `ListItem`
+would be created.
+
+The generated `onConfigure` method has no actual meaning in this instance, so
+should not have been generated.
+
+```java
+    private class TodoPanel extends Panel {
+        private static final long serialVersionUID = 1L;
+        
+        private Todo todo;
+        
+        public TodoPanel(String id, IModel<Todo> model) {
+            super(id, model);
+            this.todo = model.getObject();
+            add(new Label("text", todo.getText()).setRenderBodyOnly(true));
+            add(new AjaxLink<Void>("markTodo") {
+                @Override
+                public void onClick(AjaxRequestTarget target) {
+                    todo.setDone(true);
+                    target.add(TodoPanel.this);
+                }
+            });
+            add(new AjaxLink<Void>("removeTodo") {
+                @Override
+                public void onClick(AjaxRequestTarget target) {
+                    todos.remove(todo);
+                    target.add(TodoPanel.this.getParent());
+                }
+            });
+        }
+        
+        @Override
+        protected void onConfigure() {
+            super.onConfigure();
+            addStateChange();
+        }
+    }
+```
+
+Changing the parent to `WebMarkupContainer` would bring it one step closer to
+actually working. The concept of `Fragment` could also be a possibility but the
+generated markup seems to imply that the AI confused panels and 
+web markup containers. 
+
+The `todo` Wicket identifier is glaringly missing from the generated markup. 
+This suggest that GPT-3 has mixed generating a page and a panel, and the 
+definition and use of a Wicket panel.
+
+```html
+<html xmlns:wicket="http://wicket.apache.org">
+    <body>
+        <wicket:panel>
+            [... snipped form markup ...]
+            <div>
+                <ul>
+                    <li wicket:id="todos" class="todo">
+                        <span wicket:id="text"></span>
+                        <a wicket:id="markTodo" class="outline-success" href="#">✓</a>
+                        <a wicket:id="removeTodo" class="outline-danger" href="#">✕</a>
+                    </li>
+                </ul>
+            </div>
+        </wicket:panel>
+    </body>
+</html>
+```
 
 In this case replacing the parent class of the `TodoPanel` with `WebMarkupContainer`
-and fixing the markup is enough to get this part to work.
+and fixing the markup by removing the `<wicket:panel>` tags, and adding a 
+`<div wicket:id="todo">` as a child of the `<li wicket:id="todos">` is enough to
+get this part to work.
 
-
-
-The markup for these components is
-generated relatively correctly:
-
-```html
-<html xmlns:wicket="http://wicket.apache.org">
-    <body>
-            <h1 wicket:id="title" class="text-center mb-4"></h1>
-            <form wicket:id="formTodoForm">
-                <label wicket:id="formTodoLabel"><b>Add Todo</b></label>
-                <input type="text" wicket:id="textField" class="input" placeholder="Add new todo" />
-                <button wicket:id="submit" type="submit">Submit</button>
-            </form>
-            <div>
-                <ul>
-                    <li wicket:id="todos" class="todo">
-                        <span wicket:id="text"></span>
-                        <a wicket:id="markTodo" class="outline-success" href="#">✓</a>
-                        <a wicket:id="removeTodo" class="outline-danger" href="#">✕</a>
-                    </li>
-                </ul>
-            </div>
-        </wicket:panel>
-    </body>
-</html>
-```
-
-What went wrong in this markup file is that GPT-3 generated a closing `</wicket:panel>`
-tag, but did not generate the open tag.
-
-
-### Comments on the Generated Java Code
-
-First of all it looks and feels like a proper Wicket page and markup. What I
-immediately looked for was whether a proper Java component tree was generated
-and whether the components would have corresponding Wicket identifiers in the
-generated markup. And they did! This is quite a feat from this AI.
-
-It also generated a domain model for the ToDo items. 
-
-
-And the generated HTML markup:
-
-```html
-<html xmlns:wicket="http://wicket.apache.org">
-    <body>
-            <h1 wicket:id="title" class="text-center mb-4"></h1>
-            <form wicket:id="formTodoForm">
-                <label wicket:id="formTodoLabel"><b>Add Todo</b></label>
-                <input type="text" wicket:id="textField" class="input" placeholder="Add new todo" />
-                <button wicket:id="submit" type="submit">Submit</button>
-            </form>
-            <div>
-                <ul>
-                    <li wicket:id="todos" class="todo">
-                        <span wicket:id="text"></span>
-                        <a wicket:id="markTodo" class="outline-success" href="#">✓</a>
-                        <a wicket:id="removeTodo" class="outline-danger" href="#">✕</a>
-                    </li>
-                </ul>
-            </div>
-        </wicket:panel>
-    </body>
-</html>
-```
 
 ### Setting up the project
 
@@ -217,5 +233,3 @@ for the Maven dependency got me:
 Pasting that into my project's Maven POM made it almost compile. Because I used
 a standard QuickStart I needed to change the `WicketApplication#getHomePage()` 
 to return `App.class`.
-
-Next I needed to 
