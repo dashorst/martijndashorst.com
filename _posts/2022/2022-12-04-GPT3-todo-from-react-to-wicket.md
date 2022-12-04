@@ -1,7 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
+status: draft
+published: false
 title: "Rewrite a To Do App From React to Wicket Using GPT-3"
 ---
 Open AI has opened up their GPT-3 playground and I was looking at what the
@@ -107,6 +107,17 @@ class. And finally, when an item was added, it will reset the text field.
 Thumbs up for the form component! Next up displaying the list of todo items.
 
 ### The TodoPanel
+
+The AI also chose to create a Wicket panel component for each todo item in the
+list of todos. While the structure of the code is correct, the implementation
+would not work, as Wicket components need to have their own markup file.
+
+The generated markup for this part also shows that GPT-3 has confused using
+`WebMarkupContainer`s and `Panel`s in this instance. It also didn't generate an
+opening `<wicket:panel>` tag, only the close tag.
+
+In this case replacing the parent class of the `TodoPanel` with `WebMarkupContainer`
+and fixing the markup is enough to get this part to work.
 
 
 
