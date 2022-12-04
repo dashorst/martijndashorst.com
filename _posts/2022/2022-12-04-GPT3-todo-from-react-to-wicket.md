@@ -1,7 +1,7 @@
 ---
 layout: post
-status: draft
-published: false
+status: published
+published: true
 title: "Rewrite a To Do App From React to Wicket Using GPT-3"
 ---
 
