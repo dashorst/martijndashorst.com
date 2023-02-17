@@ -2,6 +2,7 @@
 layout: post
 status: publish
 published: true
+image:opengrpah-logo.png
 title: "Open Graph Protocol Headers Enabled"
 ---
 From [this article about Open Graph Headers for Mastodon](https://leancrew.com/all-this/2023/02/mastodon-and-open-graph/) I thought that I also needed to update my blog to make it more friendly for Mastodon as that works with standards rather than trying to define them.
