@@ -5,7 +5,7 @@ username: dashorst
 email: martijn.dashorst@gmail.com
 description: "A blog written and maintained by Martijn Dashorst"
 baseurl: ""
-url: "http://martijndashorst.com"
+url: "https://martijndashorst.com"
 permalink: /blog/:year/:month/:day/:title
 
 # Build settings
