@@ -8,6 +8,8 @@ I've been eyeing [HTMX][htmx] ever since I've laid my eyes on it, and already wa
 Fortunately €€€ dayjob provides the opportunity to combine both to build an internal tool to run several SQL scripts after one another.
 In this post I wanted to note my first impressions.
 
+![HTMX meme](https://martijndashorst.com/uploads/htmx-meme.png)
+
 First: What is HTMX in a nutshell?
 It is a JavaScript library that enables Hypertext As The Engine Of Application State (HATEOAS) in the browser by using attributes to declaritively specify what actions need to be taken and which element needs to be replaced by the HTML response of the action.
 HTMX issues mostly AJAX requests and integrates with the history API.
