@@ -57,10 +57,9 @@ The Qute templating engine is nice, and Quarkus has some decent defaults, so pro
 
 The next weeks will be fun and filled with learning!
 
-[wicket]: https://wicket.apache.org
-[wia]: https://wicketinaction.com
-[htmx]: https://htmx.org
-[hljs]: https://highlightjs.org
 [bs53]: https://getbootstrap.com/docs/5.3/)https://getbootstrap.com/docs/5.3
+[hljs]: https://highlightjs.org
+[htmx]: https://htmx.org
 [quarkus]: https://quarkus.io
-
+[wia]: https://wicketinaction.com
+[wicket]: https://wicket.apache.org
