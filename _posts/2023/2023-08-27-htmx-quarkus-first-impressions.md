@@ -62,3 +62,5 @@ The next weeks will be fun and filled with learning!
 [htmx]: https://htmx.org
 [hljs]: https://highlightjs.org
 [bs53]: https://getbootstrap.com/docs/5.3/)https://getbootstrap.com/docs/5.3
+[quarkus]: https://quarkus.io
+
