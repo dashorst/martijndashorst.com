@@ -15,12 +15,22 @@ It is a JavaScript library that enables Hypertext As The Engine Of Application S
 HTMX issues mostly AJAX requests and integrates with the history API.
 It is fully HTML driven, no additional JavaScript is necessary, only if you want pure clientside functionality.
 
+```html
+<div hx-get="/banana" hx-target="#strawberry">Click me</div>
+
+<div id="strawberry">gets replaced by the HTML that is returned after the AJAX GET</div>
+```
+Clicking the `Click me` text inside the first `div` element will issue an AJAX GET request to the `/banana` endpoint on the server.
+The request should respond with a HTML fragment that will replace the `strawberry` div.
+HTMX takes care of all the plumbing.
+
 My notes:
 
 - Quarkus: it is rather easy to get started and add new plugins
 - For this project I needed Qute templates and JAX-RS (so rest-easy)
 - Including HTMX is just using a `<script>` tag
 - Using HTMX is just using the proper `hx-XYZ` attributes on your DOM elements
+- Most uses for rich clients are present in the HTMX API: updating multiple elements in one go, events, history, etc.
 - Rethinking how to do templating and setting up HTML endpoints for the UI is challenging coming from a [Wicket][wicket] history
 
 As you might know I have a [pretty strong Wicket background][wia]. 
