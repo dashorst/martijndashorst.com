@@ -10,8 +10,9 @@ In this post I wanted to note my first impressions.
 
 ![HTMX meme](https://martijndashorst.com/uploads/htmx-meme.png)
 
-First: What is HTMX in a nutshell?
-It is a JavaScript library that enables Hypertext As The Engine Of Application State (HATEOAS) in the browser by using attributes to declaritively specify what actions need to be taken and which element needs to be replaced by the HTML response of the action.
+=== What is HTMX in a nutshell?
+
+It is a JavaScript library that enables _Hypertext As The Engine Of Application State_ (HATEOAS) in the browser by using attributes to declaritively specify what actions need to be taken and which element needs to be replaced by the HTML response of the action.
 HTMX issues mostly AJAX requests and integrates with the history API.
 It is fully HTML driven, no additional JavaScript is necessary, only if you want pure clientside functionality.
 
@@ -24,7 +25,7 @@ Clicking the `Click me` text inside the first `div` element will issue an AJAX G
 The request should respond with a HTML fragment that will replace the `strawberry` div.
 HTMX takes care of all the plumbing.
 
-My notes:
+=== My notes
 
 - Quarkus: it is rather easy to get started and add new plugins
 - For this project I needed Qute templates and JAX-RS (so rest-easy)
@@ -34,8 +35,8 @@ My notes:
 - Rethinking how to do templating and setting up HTML endpoints for the UI is challenging coming from a [Wicket][wicket] history
 
 As you might know I have a [pretty strong Wicket background][wia]. 
-So the serverside rendering component of HTMX and low-JavaScript usage appeals considerably to me.
-I have to re-learn some stuff to actually get good in the HTMX and HATEOAS mindset, and to combine multi element updates instead of relying on full page refreshes (which HTMX takes good care of!)
+So the serverside rendering component of HTMX and low-JavaScript usage appeals to me considerably.
+I have to re-learn some stuff to actually get good in the HTMX and HATEOAS mindset, and to combine multi-element updates instead of relying on full page refreshes (which HTMX takes good care of!)
 
 I have created an already quite complicated UI with:
 
@@ -54,12 +55,15 @@ Tally for now:
 - [highlightjs][hljs] + highlight-tsql
 - [HTMX][htmx]
 
-Next up:
+=== Next up
+
 - securing the thing with OIDC + Topicus Keyhub
 - connecting the project to a local git checkout of our project(s)
 - making the scripts runnable against a database
 
-The fun part when compared to Wicket pages is that you can easily edit the HTML templates to add functionality.
+=== In conclusion
+
+The fun part when compared to writing Wicket pages is that you can easily edit the HTML templates to add functionality.
 It is further enhanced by the quick reloading of my currently 3 Java classes by Quarkus' development mode.
 
 The hardest part for me is to figure out how to make this all maintainable and discoverable.
