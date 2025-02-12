@@ -27,6 +27,11 @@ message like `JIRA-banana fixed NPE in FooBar` which was rebased and merged
 with main, so the local head commit(s) don't match with what was merged,
 this will show the branch as merged.
 
+In a single line command:
+```bash
+git for-each-ref --format='%(refname:short)' refs/heads | grep -v main | while IFS= read -r branch; do if [[ $(git log -1 --grep "$branch") ]]; then echo "git branch -D $branch" ; fi ; done
+```
+
 Output:
 ```
 git branch -D JIRA-banana
