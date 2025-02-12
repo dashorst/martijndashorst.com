@@ -15,7 +15,11 @@ exists in the log of the current branch (usually main) and generate
 corresponding delete branch git calls.
 
 ```bash
-for i in `git branch | grep -v main` ; do if [[ $(git log -1 --grep $i ) ]] ; then echo git branch -D $i ; fi ; done
+git for-each-ref --format='%(refname:short)' refs/heads | grep -v main | while IFS= read -r branch; do
+    if [[ $(git log -1 --grep "$branch") ]]; then
+        echo "git branch -D $branch"
+    fi
+done
 ```
 
 So given a local branch with name `JIRA-banana`, and a commit with a 
