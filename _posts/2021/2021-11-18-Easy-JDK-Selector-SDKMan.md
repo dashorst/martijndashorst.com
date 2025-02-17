@@ -33,7 +33,7 @@ I wrote the shell function below to select the top installed version for the JDK
 
 ```bash
 function jdk() {
-  sdk use java `sdk ls java | grep installed | grep "\s$1" | awk '{print $NF}' | head -1`
+    sdk use java $(sdk ls java | grep -E "(\s+installed|\s+local only)" | grep "\s$1" | awk '{print $NF}' | head -1)
 }
 ```
 
