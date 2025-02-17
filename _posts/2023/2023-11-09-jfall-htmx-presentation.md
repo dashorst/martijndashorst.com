@@ -19,7 +19,7 @@ These are [the slides](https://www.slideshare.net/dashorst/htmx-web-10-with-the-
 
 ## Why does HTMX exist?
 
-Current web archicture focusses on oodles of JavaScript and SPA's to work around the limitations of HTML as a client side application platform:
+Current web architecture focusses on oodles of JavaScript and SPA's to work around the limitations of HTML as a client side application platform:
 
   - HTML only provides GET and POST, and
   - only <a> and <form> tags provide client-server communication
