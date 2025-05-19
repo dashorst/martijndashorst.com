@@ -2,7 +2,7 @@
 layout: post
 status: published
 published: true
-title: Clean up stack traces with one line of macOS bash
+title: Clean your stack traces with one line of shell script
 ---
 One of the biggest issues with stack traces in Java web applications (Jakarta EE and/or Spring alike) is the enormous stack traces they produce when you get an error.
 
