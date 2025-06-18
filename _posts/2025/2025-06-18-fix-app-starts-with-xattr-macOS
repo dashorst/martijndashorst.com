@@ -1,0 +1,15 @@
+---
+layout: post
+status: published
+published: true
+title: "Fix 'move application to bin' errors on macOS using xattr"
+---
+Fix F***ING macOS errors when you have a homebrew installed application that breaks the verification after an upgrade.
+
+I've installed Headlamp through Homebrew and after an update it wouldn't start anymore. Apparently some signatures were invalidated by the update. You can update the signatures using:
+
+```
+xattr -cr /Applications/Headlamp.app
+```
+
+And the application will start again.
